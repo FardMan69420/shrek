@@ -88,8 +88,10 @@ img {
     }
     typeWriter()
     x = 0
-    var audio = new Audio('trap nation fart.mp3');
-    audio.play();
+    setTimeout(function(){
+      var audio = new Audio('trap nation fart.mp3');
+      audio.play();
+    }, 3000)
     setInterval(function(){
         x = x + 1
         document.getElementById("number").innerHTML = x;
